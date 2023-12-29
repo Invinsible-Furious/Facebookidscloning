@@ -114,17 +114,13 @@ def moch_yayan():
                     print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mUbah bahasa, harap tunggu\033[1;91m!!\033[00m")
                     try:
                         requests.get(
-                            mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),
-                            cookies=cek)
+                            mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),cookies=cek)
                     except:
-                        pass4
+                        pass
 
                 try:
                     ikuti = \
-                        parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",
-                                                                                                                 string="Ikuti")[
-                            "href"]
-                    ses.get(mbasic.format(ikuti), cookies=cek)
+                        parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]ses.get(mbasic.format(ikuti), cookies=cek)
                 except:
                     pass
                 return cek["cookie"]
