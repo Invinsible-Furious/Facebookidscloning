@@ -101,8 +101,7 @@ def moch_yayan():
             except FileNotFoundError:
                 ikeh_ikeh_kimochi()
                 kontol()
-                cek = input(
-                    "\n\033[0;92m       [ \033[0;97mThis Tool Use Facebook Cookies \033[0;92m]\n\n\033[97m [\033[91m?\033[97m] Cookies \033[1;91m: \033[1;96m")
+                cek = input("\n\033[0;92m       [ \033[0;97mThis Tool Use Facebook Cookies \033[0;92m]\n\n\033[97m [\033[91m?\033[97m] Cookies \033[1;91m: \033[1;96m")
                 print('\n\033[97m [\033[92m+\033[97m] \033[92mPleas Wait...')
             cek = {"cookie": cek}
             ismi = ses.get(mbasic.format("/me", verify=False), cookies=cek).content
@@ -113,14 +112,12 @@ def moch_yayan():
                 else:
                     print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mUbah bahasa, harap tunggu\033[1;91m!!\033[00m")
                     try:
-                        requests.get(
-                            mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),cookies=cek)
+                        requests.get(mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),cookies=cek)
                     except:
                         pass
 
                 try:
-                    ikuti = \
-                        parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
+                    ikuti = \parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
                     ses.get(mbasic.format(ikuti), cookies=cek)
                 except:
                     pass
