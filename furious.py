@@ -114,14 +114,14 @@ def moch_yayan():
                     try:
                         requests.get(mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),cookies=cek)
                     except:
-                        moch_yayan()
+                        pass
                         
 
                 try:
                     ikuti = parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
                     ses.get(mbasic.format(ikuti), cookies=cek)
                 except:
-                    moch_yayan()
+                    pass
                     
                 return cek["cookie"]
                 aahh('\033[1;97m[\033[1;94m√\033[1;97m] \033[1;92mLogin Successfully')
