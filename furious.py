@@ -208,8 +208,7 @@ def moch_yayan():
                 else:
                     id.append(user[1] + "|" + user[0].split('/')[1])
                 print(
-                    f'\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m{str(len(id))} \033[1;97mProcess Of Retrieving ID... ',
-                    end="")
+                    f'\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m{str(len(id))} \033[1;97mProcess Of Retrieving ID... ',end="")
             if 'Lihat Selengkapnya' in str(like):
                 getlike(mbasic.format(parser(like, 'html.parser').find('a', string="Lihat Selengkapnya")["href"]))
             return id
