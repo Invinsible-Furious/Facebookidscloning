@@ -35,10 +35,10 @@ def kontol():
 ▐░▌       ▐░▌▐░▌      ▐░▌       ▄ ▐░▌       ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌      
 ▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌     
  ▀         ▀  ▀         ▀       ▀  ▀         ▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀    ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀
-        ︻デ═一 HACKER : AKASH BLACK HAT
+        ︻デ═一 HACKER : Furious Legit
 \x1b[1;94m────────────────────────────────────────────────────
-\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Author   : AKASH BLACK HAT
-\x1b[1;97m [\x1b[1;92m•\x1b[1;94m•\x1b[1;97m] Github   : https://github.com/akashblackhat
+\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Author   : Furious
+\x1b[1;97m [\x1b[1;92m•\x1b[1;94m•\x1b[1;97m] Github   : https://github.com/Invinsible-Furious
 
 \x1b[1;94m────────────────────────────────────────────────────""")
 
@@ -56,10 +56,10 @@ def jembut():
 ▐░▌       ▐░▌▐░▌      ▐░▌       ▄ ▐░▌       ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌      
 ▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌     
  ▀         ▀  ▀         ▀       ▀  ▀         ▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀    ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀
-              ︻デ═一 HACKER : AKASH BLACK HAT
+              ︻デ═一 HACKER : Furious
 \x1b[1;94m────────────────────────────────────────────────────
-\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Author   : AKASH BLACK HAT
-\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Github   : https://github.com/akashblackhat
+\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Author   : Furious
+\x1b[1;97m [\x1b[1;92m•\x1b[1;94m•\x1b[1;97m] Github   : https://github.com/Invinsible-Furious
 
 \x1b[1;94m────────────────────────────────────────────────────""")
 
@@ -67,7 +67,7 @@ def jembut():
 def yayanxd():
     yayan = input("\n\033[00m\t   [\033[96m Press Enter To Return\033[97m ] ")
     if yayan == "":
-        os.system("python AKASH2021.py")
+        os.system("python furious.py")
     else:
         sys.exit("\n\033[1;97m [\033[1;91m•\033[1;97m] \033[1;91mGood Byee :')")
 
@@ -130,10 +130,10 @@ def moch_yayan():
                 return cek["cookie"]
                 aahh('\033[1;97m[\033[1;94m√\033[1;97m] \033[1;92mLogin Successfully')
             else:
-                os.system("xdg-open https://youtu.be/DF7bUCn0GFY")
+                os.system("xdg-open https://www.youtube.com/channel/UC2ycSWzTSg-mmEIjns7-yrQ")
                 os.system('rm -rf cookies')
                 print(" \n \x1b[1;97m[\x1b[1;91m!\x1b[1;97m] Cookies Error")
-                os.system('python Cr4ck.py')
+                os.system('python furious.py')
 
         def login(username, password, cek=False):
             global die, check, result, count
