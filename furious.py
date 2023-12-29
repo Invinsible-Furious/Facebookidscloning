@@ -117,7 +117,7 @@ def moch_yayan():
                         pass
 
                 try:
-                    ikuti = \parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
+                    ikuti = parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
                     ses.get(mbasic.format(ikuti), cookies=cek)
                 except:
                     pass
