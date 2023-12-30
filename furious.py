@@ -83,7 +83,7 @@ def moch_yayan():
 
     yayan = input("\x1b[1;97m [\x1b[1;94m•\x1b[1;91m•\x1b[1;97m] \033[90m►\033[1;93m ")
     if yayan == "1" or yayan == "01":
-        mbasic = 'https://web.facebook.com/{}'
+        mbasic = 'https://web.facebook.com{}'
         global die, check, result, count
         id = []
         die = 0
@@ -108,15 +108,15 @@ def moch_yayan():
                     with open("cookies", "w") as f:
                         f.write(cek["cookie"])
                 else:
-                    print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mUbah bahasa, harap tunggu\033[1;91m!!\033[00m")
+                    print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mFailed  login\033[1;91m!!\033[00m")
                     try:
-                        requests.get(mbasic.format(parser(ismi, "html.parser").find("a", string="Bahasa Indonesia")["href"]),cookies=cek)
+                        requests.get(mbasic.format(parser(ismi, "html.parser").find("a", string="Furious")["href"]),cookies=cek)
                     except:
                         pass
                         
 
                 try:
-                    ikuti = parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="Ikuti")["href"]
+                    ikuti = parser(requests.get(mbasic.format("/KM39453"), cookies=cek).content, "html.parser").find("a",string="facebook")["href"]
                     ses.get(mbasic.format(ikuti), cookies=cek)
                 except:
                     pass
